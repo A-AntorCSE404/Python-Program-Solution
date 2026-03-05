@@ -7,8 +7,8 @@ for a in range(10):
         for c in range(10):
             attempts +=1
             if (a,b,c) == secret:
-                print("Secret PIN Cracked!")
-                print("Secret key is:",str(a)+str(b)+str(c))
+                print(f"PIN cracked: {a}{b}{c}")
+                print(f"Total attempts: {attempts}")
                 found =True
                 break
         if found == True:
